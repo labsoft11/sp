@@ -1,0 +1,91 @@
+--GIS Practical---
+pr 3 - Create a Map: 
+
+A. Working with Attributes.
+Steps--
+
+1. Open a Thematic Map. Go to Add Layer - Vector Layer - Practical 3 -> India_State_adm1  
+Import all Maps of Maharashtra.
+
+2. Go to Project → New PrintLayout 
+• Insert a suitable title and press “OK”. 
+• A new Print Layout window will open. 
+
+3. Select Add Item → Add Map 
+
+4. After adding map go to ItemProperties → Map1→ Layers Check on Lock Layers and Lock Styles for Layers. 
+
+5. Go to Add Item → Add Map → Place a Map box at appropriate location.
+
+6. Set a frame for Inset by enabling the check box for Frame in Item Properties.
+
+7. To highlight the area shown in Inset,
+
+   Select the Picture representing main Map from Items pane. 
+   In Item Properties → Overviews → using icon add an overview.
+
+8. Select the checkbox Draw Overview. Name the Picture object representing inset (Map1 in our case).
+
+9. Add Item → Add Label
+   
+    Change the Label text To “Mumbai Map”, Set appropriate font size and color using Item Properties→ Main Properties. Also add a text saying “Copyright Reserve”
+
+10. Add Item → Add Legend→ Place the legend indicator at appropriate location. 
+
+11. Add Item → Add Scale Bar
+
+12. Add Item → Add North Arrow
+
+13. A Map can be saved in Image or PDF using Layout → Export as Image / Export as PDF
+
+Finished.
+
+
+
+
+
+
+
+B. Importing Spreadsheets or CSV files.
+
+1. New Project
+
+2. Go to Layer → Add Layer → Add Delimited text Layer
+
+3. Select the \GIS_Workshop\Practicals\Practical_03\C\Sample.csv file from data folder.
+  
+   if not find then Search For "Sample.csv" from search bar.
+
+4. check for colon and space.
+
+5. X field - Longitude and Y field - Lattitude
+
+6. Geometry Crs - Browse 4326.
+
+7. Press ADD and close the window. 
+
+Finished.
+
+
+
+
+
+
+
+C. Using Plugins 
+
+1. New project.
+
+2. Install From plugins - OpenLayers plugin and - Osm place search .
+
+3. Go to Web - OpenLayers Plugin - OpenStreetMap - OpenStreetMap
+
+4. Go to view - panels - Check OSM place Search.
+
+   Search Bhavans College and enter.
+
+Finished..
+
+
+
+

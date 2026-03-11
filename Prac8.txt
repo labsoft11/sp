@@ -1,0 +1,121 @@
+Prac8
+
+
+
+New Project
+
+A. Nearest neighbor analysis
+
+1 Add Vector Layer  select file Practical_08  DATA  A  ne_10m_populated_places_simple  ne_10m_populated_places_simple.shp  Add  close.
+
+
+2 Add delimited text layer  select file Practical_08  DATA  A  signif.txt  do changes 
+remove coma, colon . longitude, latitude add  close.
+
+3 Click on processing  toolbox  Vector geometry  double click on Remove null geometries  do changes  also remove emt geometries run.
+
+in Dropdown select the signif
+
+4 Again click on processing  toolbox  vector analysis  double click on distance to nearest hub (line to hub)  run.
+
+Source Points layer 
+Non null geometriecs
+
+Destination hubs layer
+ne_10m_populated_places_simple
+
+in Hub Layer Attribute take
+name
+
+Measurement Unit
+Kilometers
+
+run.
+
+One hub layer would create it 
+Here 8 A prac Finished
+
+
+
+
+
+
+B. Sampling raster data using point or polygons.
+
+Click on Add raster layer  select file practical_8  DATA  B  us.tmax_nohads_ll_20140525_float.tif  add  close.
+
+Add delimited text layer  select file practical_8  DATA  B  2013_Gaz_ua_national  2013_Gaz_ua_national.txt  and do some changes  add  close.
+
+Processing tab  toolbox  raster analysis  sample raster values  do changes  output - tmax -  run  close.
+
+in Parameters 
+input layers 
+2013_Gaz_ua_national
+
+Raster Layers 
+us.tmax_nohads_ll_20140525_float.tif
+
+Then click on Identify features i icon
+
+Right click on output layer  open attribute table. show 2013.....
+
+Add vector layer  Practical_08  DATA  B  tl_2018_us_county  tl_2018_us_county.shp  add.
+
+Processing  toolbox  raster analysis  zonal statistics.
+
+in that select Parameters 
+
+Input Layers 
+tl_2018_us_county
+
+Raster Layer
+us.tmax_nohads_ll_20140525_float.tif
+
+
+Right click on output 2  properties  symbology  
+do The Graduated 
+value tmaxmean
+mode Equal Count(Quantile) 
+
+classify
+
+do changes  apply  ok.
+
+
+
+
+
+
+
+
+
+
+C. interpolating point data.
+
+Add vector layer  select file practical_8  C  Shapefiles  Arlington_Soundings_2007_stpl83.shp  add  again select file  Practical_08-20211217T154402Z-001  Practical_08  DATA  C  Shapefiles  Boundary2004_550_stpl83.shp  add  close
+
+Unselect Boundary2004_550_stpl83  click on identify features    right click on dot  identify 
+all(1331).
+
+Add vector layer  Practical_08  DATA  C  Shapefiles  Islands_2004_550_stpl83.shp  add  close.
+Click on processing  toolbox  interpolation  TIN interpolation  do changes  run  close.
+Accept Interpolated other unselect.
+
+Processing  toolbox  GDAL  raster extraction  clip raster mask layer  run  close.(unselect other)
+
+Right click on clipped  properties  symbology  change render type: single pseudcolor.
+
+Processing  toolbox  GDAL  contour  change  run  close.
+
+Right click on contour  properties   labels  changes  apply  ok.
+
+
+
+
+
+
+	
+
+
+
+

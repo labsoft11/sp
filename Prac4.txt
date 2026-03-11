@@ -1,0 +1,50 @@
+--GIS Practical---
+pr 4A - Working with Terrain Data attributes and hill shapes. 
+Steps--
+
+1. Start a new project.  
+• Go to Layer → Add Layer → Add Vector Layer  
+• Select “\GIS_Workshop\Practicals\Practical_04\A\Data\ne_10m_populated_places_simple.shp”
+
+2. Right click on Layer in Layer Panel → Open Attribute Table.
+
+3. On clicking the Select feature using expression  button the following window will appear.
+
+4. Enter pop_max>100 and pop_max<10000 and then click on select features and close.
+
+5.Enter pop_max>100 and pop_max<1000 and "sov0name" = 'United States' and then click on select features and close.
+
+
+
+
+
+
+B. Terrain Data and Hill shade analysis:
+Steps----
+
+1. Go to Layer → Add Raster Layer → practical 4 - Data - select “10n060e_20101117_gmted_mea300.tif”.
+
+2. Go to Raster → Extraction→ Clip Raster by Extent 
+
+3. Select the raster layer (if project contains multiple layers). in Input layer
+
+4. Select Clipping extent - Use current map canvas event.
+
+5. save the file and run.
+
+6. Go to Raster → Extraction→ Contour 
+
+7. Select the input raster layer name. Set contour interval 100.00 meters.
+
+8. Press “RUN”. 
+
+9. Go to properties of Contours -> Labels -> Single Labels -> Change the color Red. 
+
+10. For Hill Shade surface analysis. 
+
+Go to Plugin → Install Georeferenced GADL.  
+After successful installation of plugin Go to Raster → Analysis → Hill Shade 
+
+11. Select the input layer as the clip extend that we created. 
+
+12. Press “RUN” and Close the Hill Shape Dialog window.

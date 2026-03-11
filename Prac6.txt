@@ -1,0 +1,144 @@
+Prac 6
+
+A. Georeferencing Topo Sheets and Scanned Maps.
+Steps---
+
+
+1. Start a new project
+
+2. Go to Layers → Add Layer → Add vector Layer
+
+3. Select GIS_Workshop\Manual\Prac06\IND_adm0.shp
+
+4. Zoom in to Mumbai region in the layer.
+
+5. Go to Plugins→ Manage and Install Plugins
+
+6. Install Georeferencer Extension
+
+7. Go to Raster → Georeferencer
+
+8. File → Open Raster
+
+   Select - Bombay_1909 image 
+
+9. Go to Settings →Transformation Settings
+
+10. 	Select Transformation type → Thin Plate Spline 
+	Re-sampling Method → Nearest Neighbour ▪ 
+	Target TRS → Everest 1830 datum: EPSG 4044 
+	Select Output Raster Name and Location 
+	Check the Load in QGIS When Done Option 
+	Press “OK”.
+
+11. In Georeferencer window Go to Edit → Add Points
+
+12. Go to, Setting → transformation settings.
+	Target Crs - 4326
+
+13. Press “ok” 
+
+14. In Georeferencing window go to → File → Start Georeferencing
+
+15. Select the newly added layer in Layer Panel Right click and go to property.
+
+16. Go to Transparency - 50%
+
+Finished.....
+
+
+
+
+
+
+
+
+
+
+B. Georeferencing Aerial Imagery
+
+1. New Project.
+
+2. Install plugin OpenStreetMap
+
+3. Go to Web Menu → OpenLayerPlugin → OpenStreetMap→ OpenStreetMap
+
+4. Go to Project → Properties → Set CRS to EPSG 3857
+
+5. Go to View → Panels → select OSM Place search
+
+6. Or From The Plugins → select OSM Place search
+
+7. Go to Project - properties - CRS - 3857
+
+8. Search - Gateway of India
+
+9. Go to Raster → Georefrencer
+
+10. File → Open Raster - add "Gateway_Aerial_imagenary.tif"
+
+11. Edit - Add points
+
+12. Setting - Transformation setting - Target Srs - 3857.
+
+13. File - Start Geoconferencing
+
+finished....
+
+
+
+
+
+
+
+
+
+C. Digitizing Map Data
+
+1. New Project.
+
+2. Go to Layer ‣ Add Raster→ Select “Christchurch Topo50 map.tif” from project Folder
+
+3. Right-click the Christchurch Topo50 map.tif layer and select Properties
+
+4. Choose the Pyramids tab. Hold the Ctrl key and select all the resolutions offered in the Resolutions panel 
+
+5. Click Build pyramids. Then click OK
+
+6. Go to Settings →Options.... Select the Digitizing tab in the Options dialog
+
+7. Check tick on - Enable snapping by default.
+
+8. Default snap mode to - Vertex.
+
+9. Press Ok.
+
+10. Go to Layer - Create Layer - New Spatialite Layer.
+
+11. Database - Browse - Save the file.
+
+12. Layer name - DigitizeRoad
+
+13. Geometry Type - Line
+
+14. Name - Name - ADD TO FIELD LIST
+    Name - Class - ADD TO FIELD LIST
+
+15. Press ok
+
+16. Click on pencil icon(Toggle editing button).
+
+17. Click on line feature .
+
+18. draw road on map - right click - Name - Road, Class - Street.
+
+19. Right click on layer, properties - Symbology - Effect neon Line - Apply - ok
+
+20. Same Step to create for building.....
+
+21. Take polygon.
+
+22. Building layer - properties - labels - Single labels.
+
+finished....
+

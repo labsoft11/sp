@@ -1,0 +1,62 @@
+Managing Data Tables and Spatial Data Sets:
+a. Table joins
+
+• Start a new project
+• Go to Layer → Add Layer → Add new Vector Layer
+“I:\GIS_Workshop\Practicals\Practical_07\A\Data\tl_2013_06_tract.zip”
+• Go to Layer → Add Layer → Add Delimited Text Layer And add
+I:\GIS_Workshop\Practicals\Practical_07\A\Data\ca_tacts_pop.csv”
+• In the layer panel, Right click on “tl_2013_06_tract”, layer and select Properties
+
+• Select the JOIN option in Properties, and click on “+” button to add new table join.
+• In the Add Vector Join window set the following properties and click OK.
+Input  Layer : ca_tracts_pop
+Join field: geoid
+Target field: GEOID
+
+• For more clear output, select “tl_2013_06_tact” from Layer Panel, right click and select properties. Go to
+Symbology and click on Classify. 
+
+OUTPUT:
+
+b. Spatial Joins:
+
+• Go to Layer → Add Layer → Add Vector Layer → Select
+“I:\GIS_Workshop\Practicals\Practical_07\B\Data\nybb_12c\nybb_13c_av\nybb.shp” and
+“I:\GIS_Workshop\Practicals\Practical_07\B\Data\OEM_NursingHomes_001\OEM_NursingHo
+mes_001.shp”, from data folder.
+• Go to Vector → Data Management Tools → Join Attributes by Location
+• Click on the three dots: Fields to select: select all
+• Use the Identify Feature Button to select a region to view join data on map Layer.
+
+OUTPUT:
+
+c. Points in polygon analysis
+• Points in polygon analysis
+• Go to Layer → Add Layer → Add Delimited Text Layer Select “EarthQuakeDatabase.txt.
+• Go to Layer → Add Layer → Add Delimited Text Layer
+“I:\GIS_Workshop\Practicals\Practical_07\C\Data\ne_10m_admin_0_countries.zip”
+• Go to Analysis Tools -> Count Points in Polygon
+• Make the Following Changes in the tab
+• A new Layer will be added.
+• Go to the information buttons -> Click on a location on map 
+
+OUTPUT:
+
+d. Performing spatial queries
+• Use the select Feature button to check country wise counting of Earthquakes.
+• Performing spatial queries
+• Go to Layer → Add Layer → Add Vector Layer and load
+“\GIS_Workshop\Practicals\Practical_07\D\Data\ne_10m_populated_places_simple\ne_10m_popul
+ated_places_simple.shp” and
+“I:\GIS_Workshop\Practicals\Practical_07\D\Data\ne_10m_rivers_lake_centerlines\ne_10m_rivers
+_lake_centerlines.shp” from project data folder
+• Go to Properties of River_lakes centerlines and change the symbol.
+Open project Properties → Set CRS “World_Azimuthal_Equidistant EPSG 54032” . The map will be reprojected as
+• Go to Vector → Geoprocessing Tool → Buffer (Input Layer : ne_10m_rivers_lake_centerlines) and Run
+• Create a buffer for River
+• Go to Vector → Research Tool → Select By Location (INPUT LAYER: BUFFERED LAYER CREATED and RUN)
+• This will highlight only those rivers containing a populated place within 2 KM
+
+
+

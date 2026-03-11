@@ -1,0 +1,70 @@
+--GIS Practical---
+pr 2 - Exploring and Managing Raster Data:
+
+A. Adding raster layers:
+Steps--
+
+1. new project
+2. layer - add layer - add raster layer
+3. browse - practical 2 - A - gl_gpwv3_pdens_90_ascii_one - glds90ag60.asc - add.
+4. similar add glds00ag60.asc
+
+
+
+B. Raster Styling and Analysis:
+Steps--
+
+1. Right-click on the glds90ag60 layer and select Properties.
+
+2. Go to Symbology. In Render type, select Singleband pseudocolor.
+Set:
+Min value: 0
+Max value: 240
+Under Interpolation, select Linear.
+In the Color ramp menu, choose Spectral.
+Click Apply, then click OK.
+
+3. Go to Raster → Raster Calculator.
+
+4. Click on the … (Browse) button. A menu will appear—select the path where you want to save the output. Enter a name for the output file and click Save.
+In the Raster Calculator window:
+Double-click on glds00ag60@1
+Click on the “-” (minus) operator
+Then double-click on glds90ag60@1
+
+5. Click OK to generate a new raster layer.
+
+6. Right-click on the newly created layer and select Properties - Go to the Symbology tab. - Set Render type to Single band pseudocoelom. 
+Set :
+Minimum value to –20000 and Maximum value to 6000.
+Set Interpolation to Discrete.
+Select Spectral from the Color ramp menu.
+Remove all existing classifications.
+Add required classes using the + and – buttons.
+-20000 No Data
+-10 Negative
+10 Positive
+2000 Neutral
+Click Apply, then click OK.
+
+
+C. Mosaicking & Clipping
+Steps-- 
+
+1. Go to Layer - Add Layer - Add Raster Layer - Add 4.India Images.
+
+2. Go Raster - Miscellaneous - Merge
+
+3. In the Merge dialog box:
+Select all the input raster layers to be mosaicked.
+Specify the output file name and choose the location to save the merged image.
+Click the Run button to start the mosaicking process.
+After successful execution, click Close.
+
+4. Go to Layer - Add Layer - Add Vector Layer - Browse and select IND_adm0.shp from the folder Practical_No_2_Data\IndiaAdminBoundry - Click Add, then click Close.
+
+5. From Layer Properties - Select Symbology - Select outline blue of the following then click Apply and ok Buttons.
+
+6. Go to Raster - Extraction - Clip Raster by Mask Layer
+
+7. Select the merge raster layer as input and Ind_adm0 as mask layer

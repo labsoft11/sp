@@ -1,0 +1,19 @@
+gis 9prac
+
+Excel
+
+1.Open Workbook -> practical 10->Data-> kenya eqidemiological_data.
+2.click view tab->freeze panes->freeze top row->and select entire child_id(first column)
+3.Click on Home tab-> conditional formatting->highlight cell rules -> duplicate value->select->ok
+4.Select all table-> go to data tab-> remove duplicated->ok
+5.Select sex column-> clrt+f->use replace Function replace f-1 and m-2 and click
+on click replace all
+6. Home tab-> select age column->sort & filter ->filter->number filter->greater han -> select any value and click ok
+7.Go to insert tab-> pivot table-> select new worksheet-> ok
+8.Drag and drop column in box 
+9. formulas
+go to sheet 1-> given column name'checks'->right formula->if(and(H2=0,Not(2="")),1,0)->enter
+10.open qgis->new project
+11.add vectorlayer->select file->prc10->data->kenya admin.shp->add->close
+12. add delimited layer->select file prc10->data->kenya_school_location.csv->do changes->add-> then click on identitfy features
+finished prc

@@ -1,0 +1,23 @@
+--GIS Practical---
+pr 5 - Working with Projections and WMS Data  
+Steps--
+
+
+1. Start a new project.
+
+2. Go to Layers → Add Layer → Add vector Layer.
+
+3. Browse - ne_10m_admin_0_countries.shp
+
+4. Go to Layer -> Save as  
+
+5.Save the file name as ‘Map 2’ → Format as ‘Geopackage’ → Layer name as ‘ne_10m_admin_0_countries.shp’
+
+6. For CRS: Click on → Filter: ESRI:102008 
+
+7. Click on OK. A window will open and select the one with accuracy ‘4’.
+
+8. Output 
+
+9. Select Layer → Add Layer → Add Raster Layer → Select MiniScale_(standard)_R17.tif from Location 
+“\Practical_05\DATA\minisc_gb\minisc_gb\data\RGB_TIF_compressed\MiniScale_(standard)_R17.tif”. 
